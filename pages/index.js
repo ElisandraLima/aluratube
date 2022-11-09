@@ -9,7 +9,7 @@ function HomePage() {
     const estilosDaHomePage = {
         // backgroundColor: "red"
     };
-    const [valorDoFiltro, setvalorDoFiltro] = React.useState("");
+    const [valorDoFiltro, setValorDoFiltro] = React.useState("");
 
     return (
         <>
@@ -21,7 +21,7 @@ function HomePage() {
                 //backgroundColor: "red",
             }}>
 
-                <Menu valorDoFiltro={valorDoFiltro} setvalorDoFiltro={setvalorDoFiltro} />
+                <Menu valorDoFiltro={valorDoFiltro} setValorDoFiltro={setValorDoFiltro} />
                 <Header />
                 <Timeline searchValue={valorDoFiltro} playlists={config.playlists}>
                     Conteúdo
