@@ -1,23 +1,78 @@
 {
-    "name": "Elisandra Santos de Lima",
+    "name": "Elisandra Lima (LaranjaLima)",
     "job": "Analista de Softwere",
     "github": "ElisandraLima",
     "playlists": {
         "jogos": [
             {
-                "title": "Frostpunk - Neve e Steak tartare",
-                "url": "https://www.youtube.com/watch?v=QsqatJxAUtk",
-                "thumb": "https://img.youtube.com/vi/QsqatJxAUtk/hqdefault.jpg"
+                "title": "MORTAL KOMBAT X - TODOS OS FATALITIES do Início do Game!",
+                "url": "https://youtu.be/Ioaw4PKH-Ls",
+                "thumb": "https://img.youtube.com/vi/Ioaw4PKH-Ls/maxresdefault.jpg"
             },
             {
-                "title": "Frostpunk - Neve e Steak tartare",
-                "url": "https://www.youtube.com/watch?v=O8jtAyPuhNg",
-                "thumb": "https://img.youtube.com/vi/O8jtAyPuhNg/hqdefault.jpg"
+                "title": "CodeCombat Project Review- Running By Catsync",
+                "url": "https://youtu.be/-YLkbDFb5No",
+                "thumb": "https://img.youtube.com/vi/-YLkbDFb5No/sddefault.jpg"
             },
             {
-                "title": "Gas Station Simulator - 8 dias sem dormir!",
-                "url": "https://www.youtube.com/watch?v=R1d0DyRDG_Q",
-                "thumb": "https://img.youtube.com/vi/R1d0DyRDG_Q/hqdefault.jpg"
+                "title": "MORTAL KOMBAT X - TODOS OS FATALITIES do Início do Game!",
+                "url": "https://youtu.be/Ioaw4PKH-Ls",
+                "thumb": "https://img.youtube.com/vi/Ioaw4PKH-Ls/maxresdefault.jpg"
+            },
+            {
+                "title": "CodeCombat Project Review- Running By Catsync",
+                "url": "https://youtu.be/-YLkbDFb5No",
+                "thumb": "https://img.youtube.com/vi/-YLkbDFb5No/sddefault.jpg"
+            },
+            {
+                "title": "MORTAL KOMBAT X - TODOS OS FATALITIES do Início do Game!",
+                "url": "https://youtu.be/Ioaw4PKH-Ls",
+                "thumb": "https://img.youtube.com/vi/Ioaw4PKH-Ls/maxresdefault.jpg"
+            },
+            {
+                "title": "CodeCombat Project Review- Running By Catsync",
+                "url": "https://youtu.be/-YLkbDFb5No",
+                "thumb": "https://img.youtube.com/vi/-YLkbDFb5No/sddefault.jpg"
+            },
+            {
+                "title": "MORTAL KOMBAT X - TODOS OS FATALITIES do Início do Game!",
+                "url": "https://youtu.be/Ioaw4PKH-Ls",
+                "thumb": "https://img.youtube.com/vi/Ioaw4PKH-Ls/maxresdefault.jpg"
+            },
+            {
+                "title": "CodeCombat Project Review- Running By Catsync",
+                "url": "https://youtu.be/-YLkbDFb5No",
+                "thumb": "https://img.youtube.com/vi/-YLkbDFb5No/sddefault.jpg"
+            },
+            {
+                "title": "MORTAL KOMBAT X - TODOS OS FATALITIES do Início do Game!",
+                "url": "https://youtu.be/Ioaw4PKH-Ls",
+                "thumb": "https://img.youtube.com/vi/Ioaw4PKH-Ls/maxresdefault.jpg"
+            },
+            {
+                "title": "MORTAL KOMBAT X - TODOS OS FATALITIES do Início do Game!",
+                "url": "https://youtu.be/Ioaw4PKH-Ls",
+                "thumb": "https://img.youtube.com/vi/Ioaw4PKH-Ls/maxresdefault.jpg"
+            },
+            {
+                "title": "MORTAL KOMBAT X - TODOS OS FATALITIES do Início do Game!",
+                "url": "https://youtu.be/Ioaw4PKH-Ls",
+                "thumb": "https://img.youtube.com/vi/Ioaw4PKH-Ls/maxresdefault.jpg"
+            },
+            {
+                "title": "MORTAL KOMBAT X - TODOS OS FATALITIES do Início do Game!",
+                "url": "https://youtu.be/Ioaw4PKH-Ls",
+                "thumb":"https://img.youtube.com/vi/Ioaw4PKH-Ls/maxresdefault.jpg"
+            },
+            {
+                "title": "MORTAL KOMBAT X - TODOS OS FATALITIES do Início do Game!",
+                "url": "https://youtu.be/Ioaw4PKH-Ls",
+                "thumb":"https://img.youtube.com/vi/Ioaw4PKH-Ls/maxresdefault.jpg"
+            },
+            {
+                "title": "MORTAL KOMBAT X - TODOS OS FATALITIES do Início do Game!",
+                "url": "https://youtu.be/Ioaw4PKH-Ls",
+                "thumb": "https://img.youtube.com/vi/Ioaw4PKH-Ls/maxresdefault.jpg"
             },
             {
                 "title": "Gartic Phone - Não assista a esse NerdPlayer!",
@@ -93,15 +148,11 @@
             }
         ],
         "back-end": [
+            
             {
-                "title": "Node JS: Construindo CRUDs com file system focando em serialização e JSON",
-                "url": "https://www.youtube.com/watch?v=dvd3pNYh7So",
-                "thumb": "https://img.youtube.com/vi/dvd3pNYh7So/hqdefault.jpg"
-            },
-            {
-                "title": "Node JS: Construindo CRUDs com file system focando em serialização e JSON",
-                "url": "https://www.youtube.com/watch?v=8q36rNS5yVo",
-                "thumb": "https://img.youtube.com/vi/8q36rNS5yVo/hqdefault.jpg"
+                "title": "Pergunte o que quiser sobre Python | Live de Python",
+                "url": "https://youtu.be/ZJqSlzBDY-g",
+                "thumb": "https://img.youtube.com/vi/ZJqSlzBDY-g/maxresdefault.jpg"
             },
             {
                 "title": "O que é o Java? #HipstersPontoTube",
@@ -131,3 +182,4 @@
         ]
     }
 }
+

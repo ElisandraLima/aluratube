@@ -1,39 +1,46 @@
+import React from "react";
 import config from "../aluratube-config.json";
 import styled from "styled-components";
 import { CSSReset } from "../src/components/cssReset";
 import Menu from "../src/components/Menu";
-import {StyledTimeline} from "../src/components/Timeline";
-
-
-
+import { StyledTimeline } from "../src/components/Timeline";
 
 function HomePage() {
-
-    //const estiloDaHomePage = { backgroundColor: "red" };
-    //console.log(config.playlists);
+    const estilosDaHomePage = {
+        // backgroundColor: "red"
+    };
+    const [valorDoFiltro, setvalorDoFiltro] = React.useState("");
 
     return (
         <>
-            <CSSReset/>
-        <div>
-            <Menu />
-            <Header />
-            <Timeline playlists={config.playlists} />
+            <CSSReset />
+            <div style={{
+                display: "flex",
+                flexDirection: "column",
+                flex: 1,
+                //backgroundColor: "red",
+            }}>
 
-        </div>
+                <Menu valorDoFiltro={valorDoFiltro} setvalorDoFiltro={setvalorDoFiltro} />
+                <Header />
+                <Timeline searchValue={valorDoFiltro} playlists={config.playlists}>
+                    Conteúdo
+                </Timeline>
+
+            </div>
         </>
-        
+
     );
 }
 
 export default HomePage
 
 //function Menu() {
-    //return (
-        //<div>
-            //Menu
-        //</div>
-    //)
+//return (
+//<div>
+//Menu
+//</div>
+//)
 
 //}
 
@@ -56,7 +63,8 @@ const StyledHeader = styled.div`
 function Header() {
     return (
         <StyledHeader>
-            {/*<img src="banner" />*/}
+
+            {<div className="banner"></div>}
             <section className="user-info">
                 <img src={`https://github.com/${config.github}.png`} />
                 <div>
@@ -75,44 +83,42 @@ function Header() {
 
 }
 
-function Timeline(props) {
-    //console.log("Dentro do componente", props.playlists);
-    const playlistsNames = Object.keys(props.playlists);
-
+function Timeline({ searchValue, ...propriedades }) {
+    // console.log("Dentro do componente", propriedades.playlists);
+    const playlistNames = Object.keys(propriedades.playlists);
+    // Statement
+    // Retorno por expressão
     return (
         <StyledTimeline>
-            {playlistsNames.map((playlistsName) => {
-
-                const videos = props.playlists[playlistsName];
-                console.log(playlistsName);
-                console.log(videos);
+            {playlistNames.map((playlistName) => {
+                const videos = propriedades.playlists[playlistName];
+                // console.log(playlistName);
+                // console.log(videos);
                 return (
-                    <section>
-                        <h2>{playlistsName}</h2>
+                    <section key={playlistName}>
+                        <h2>{playlistName}</h2>
                         <div>
-                            {videos.map((video) => {
-                                return (
-                                    <a href={video.url}>
-                                        <img src={video.thumb} />
-                                        <span>
-                                            {video.title}
-                                        </span>
-                                    </a>
-                                )
-
-                            })};
-
-
+                            {videos
+                                .filter((video) => {
+                                    const titleNormalized = video.title.toLowerCase();
+                                    const searchValueNormalized = searchValue.toLowerCase();
+                                    return titleNormalized.includes(searchValueNormalized)
+                                })
+                                .map((video) => {
+                                    return (
+                                        <a key={video.url} href={video.url}>
+                                            <img src={video.thumb} />
+                                            <span>
+                                                {video.title}
+                                            </span>
+                                        </a>
+                                    )
+                                })}
                         </div>
-
                     </section>
                 )
-
-            })};
-
+            })}
         </StyledTimeline>
     )
-
 }
-
 
