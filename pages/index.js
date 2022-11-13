@@ -4,15 +4,21 @@ import styled from "styled-components";
 import { CSSReset } from "../src/components/cssReset";
 import Menu from "../src/components/Menu";
 import { StyledTimeline } from "../src/components/Timeline";
+import { ThemeProvider } from "styled-components";
+
+
+
 
 function HomePage() {
     const estilosDaHomePage = {
         // backgroundColor: "red"
     };
     const [valorDoFiltro, setValorDoFiltro] = React.useState("");
+    
 
     return (
         <>
+        
             <CSSReset />
             <div style={{
                 display: "flex",
@@ -29,6 +35,7 @@ function HomePage() {
 
             </div>
         </>
+        
 
     );
 }
@@ -45,10 +52,21 @@ export default HomePage
 //}
 
 const StyledHeader = styled.div`
+    background-color: ${({theme}) => theme.backgroundoLeve1}; 
     img {
         width: 80px;
         height: 80px;
         border-radius: 50%;
+    }
+    section {
+        div {
+            h2{
+                color: ${({ theme }) => theme.textColorBase || "#222222"};
+            }
+            p{
+                color: ${({ theme }) => theme.textColorBase || "#222222"};
+            }
+        }
     }
 
     .user-info{

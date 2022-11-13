@@ -23,6 +23,9 @@ export const StyledTimeline = styled.div`
     padding: 0;
     overflow: hidden;
     padding: 16px;
+    h2{
+      color: ${({ theme }) => theme.textColorBase || "#222222"};
+    }
     div {
       
       width: calc(100vw - 16px * 4);

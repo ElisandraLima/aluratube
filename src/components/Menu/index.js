@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import DarkModeSwitch from "../DarkModeSwitch";
 import Search from "./search";
 
 const StyledMenu = styled.header`
@@ -25,13 +26,14 @@ const StyledMenu = styled.header`
   }
 `;
 
-export default function Menu({valorDoFiltro, setvalorDoFiltro}) {
+export default function Menu({valorDoFiltro, setValorDoFiltro}) {
     return (
         <StyledMenu>
             <div>
                 <Logo />
             </div>
-            <Search valorDoFiltro={valorDoFiltro} setvalorDoFiltro={setvalorDoFiltro}/>
+            <Search valorDoFiltro={valorDoFiltro} setValorDoFiltro={setValorDoFiltro}/>
+            <DarkModeSwitch />
         </StyledMenu>
     );
 }
@@ -49,3 +51,4 @@ function Logo() {
         </svg>
     )
 }
+
